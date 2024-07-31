@@ -41,7 +41,7 @@ p {
 .dice--container {
   width: 100%;
   display: grid;
-  grid-template: auto auto / repeat(5, auto);
+  grid-template: auto auto / repeat(auto-fit, 70px);
   justify-content: space-between;
   gap: 18px;
   cursor: pointer;
