@@ -1,0 +1,85 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #0B2434;
+  padding: 20px 30px;
+  font-family: "Karla";
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  background: #F5F5F5;
+  border-radius: 5px;
+  padding: 34px 35px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2B283A;
+}
+
+p {
+  font-size: 1.2rem;
+  max-width: 80%;
+  font-family: "Inter";
+  color: #4A4E74;
+  font-weight: 500;
+  margin-bottom: 23px;
+}
+
+.dice--container {
+  width: 100%;
+  display: grid;
+  grid-template: auto auto / repeat(5, auto);
+  justify-content: space-between;
+  gap: 18px;
+  cursor: pointer;
+  margin-bottom: 26px;
+}
+
+.die--face {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  box-shadow: 0px 2px 2px 0px #00000026;
+  border-radius: 4px;
+  color: #2B283A;
+  font-size: 1.2rem;
+}
+
+.die--face:hover {
+  background: #59E391;
+}
+
+
+
+.roll-dice {
+  height: 40px;
+  padding-inline: 26px;
+  border-radius: 4px;
+  background: #5035FF;
+  box-shadow: 0px 3.2px 7.68px 0px #0000002E;
+  font-size: 1.2rem;
+  font-family: "Karla";
+  font-weight: 700;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.roll-dice:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
